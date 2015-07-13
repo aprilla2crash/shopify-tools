@@ -1,0 +1,25 @@
+Requirements PHP 5.4 ,Curl 
+Most php web servers should have them installed.
+These Scripts are supplied as is and definitely need to be tidied up  
+
+The webhooks.php file adds every new sale in your shopify store into onepagecrm with a deal to the value of the sale
+This Sales a load of time for our company.
+Whats onepagecrm check it out here http://www.onepagecrm.com/
+
+To use the webhooks.php file create a webhook on order creation in Shopify admin in the Settings-> notifications .
+Use your location of the file on your php server (http://www.yourserver.com/webhooks.php) as the Callback URL and format JSON
+When you create the webhook it will give you a hash to verify the webhook copy this and put it instead of put-shopify-webhook-secret-here
+Enter your onepagecrm User name (your Email)
+And put in your password
+Should be good to go
+
+abandoned-checkout.php counts the number of abandoned checkouts on your shopify store and emails somebody whenever you get a new one.
+This needs you to create a private app in shopify. in the admin go to apps then in the top if the page go to private app
+Create a new one. 
+put in the api key and password into the script
+Make up an email for the from address doesn't have to be real
+the to address is the person you want to notify 
+I used the reply to address as my own address so the person being notified can email me easily if something is wrong with the script
+
+
+
